@@ -217,6 +217,12 @@ Page({
     login: function () {
         var self = this;
 
+        if (!app.globalData.userInfo) {
+            wx.navigateTo({
+                url: '/pages/login/index'
+            })
+        }
+
         wx.showLoading({
             title: '加载扫描目录中...',
             mask: true,

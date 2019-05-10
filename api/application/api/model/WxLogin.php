@@ -119,7 +119,7 @@ class WxLogin extends Model
                                 'uid' => $uid,
                                 'name' => $audio_info['title'],
                                 'src' => $src,
-                                'img' => $jpg_info['img_src'],
+                                'poster' => $jpg_info['img_src'],
                                 'author' => $audio_info['artist'],
                                 'length' => $audio_info['duration'],
                             ];
