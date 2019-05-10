@@ -23,7 +23,7 @@ class Audio extends Model
 
         $audio_res = $audio
             ->where('uid','eq',$uid)
-            ->column('name,img,src,author,length', 'id');
+            ->column('name,poster,src,author,length', 'id');
 
         if (!$audio_res) {
             $this->error = ResponseCode::NOT_HAVE_DATA;
