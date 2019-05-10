@@ -103,6 +103,7 @@ Page({
         console.log(this.data.pauseStatus)
 
         var BackgroundAudioManager = wx.getBackgroundAudioManager()
+
         if (!BackgroundAudioManager.src) {
             this.play();
         }
@@ -147,6 +148,13 @@ Page({
             dataUrl: app.config.apiHost + audioList[audioIndex].src,
             title: audioList[audioIndex].name,
             coverImgUrl: app.config.apiHost + audioList[audioIndex].poster
+        })
+
+        var self = this
+        var BackgroundAudioManager = wx.getBackgroundAudioManager()
+
+        BackgroundAudioManager.onEnded(function(){
+            self.bindTapNext()
         })
 
         let that = this
