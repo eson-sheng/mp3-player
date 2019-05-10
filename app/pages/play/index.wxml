@@ -1,0 +1,18 @@
+<!--pages/play/index.wxml-->
+ <view class='item'>
+    <text class="title">{{audioAnimation}}</text>
+    <image class='audio_post{{music_on?" music_on":""}}'  style="animation-play-state:{{music_playing?'running':'paused'}}" src='{{host}}{{img}}' ></image>
+ 
+    <view class='audio_progress'>
+      <slider block-size='14' bindchange='audioChange' bindchanging='audioChanging' value='{{sliderValue}}'></slider>
+      <view>{{musicTime}}/{{musicAllTime}}</view>
+    </view>
+
+    <view class='audio_control'>
+      <button bindtap='bindTapPrev'>《</button>
+      <button bindtap='stopMusic'>⏹</button>
+      <button bindtap='bindTapPlay'>{{music_playing === true ? '暂停' : '开始'}}</button>
+      <button bindtap='bindTapNext'>》</button>
+    </view>
+    
+  </view>

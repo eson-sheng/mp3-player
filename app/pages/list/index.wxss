@@ -1,0 +1,41 @@
+/* pages/list/index.wxss */
+.items-list{
+  margin: 20rpx;
+}
+.pro-logo{
+  float: left;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 20rpx 15rpx 0;
+  border-radius: 100%;
+}
+.pro-body{
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1rpx solid hsl(0, 1%, 86%);
+}
+.pro-icon-play{
+    float: right;
+    flex: 0 0 86rpx;
+    width: 86rpx;
+    height: 86rpx;
+    margin-left: 20rpx;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/ElEQVRYR+2V3QnCQBCEv1SgnagVqB1YgnailagViBVoB2on2oEMbCAIyt3uQTDcPuUhYb6Z/UlDz9X0rE8FqAn8XQJjYA/sgHuJDcpNYAWcgCewLAGRCyDTV2Bu4oIQjLs8AGqDICYlIDwAcvsJMfNG4AWQ3tSSGAEHYOOBiAAUgYgCtBA3c6/13OYkUQJAemu7D3rWPCTfiEEAtMdJ7jWIGsjkiiagTbjYWmb3X5QRgK740eYg2Xn7ohdAh0jOBXEG1AZXeQC64g9gEfkfeADan1FY3DMDcqvoX+Y8ed+/9Sc3AcWvNdO1C4t7EnAN2q+PchOoADWB4SXwBpLRKiGVBxbXAAAAAElFTkSuQmCC) no-repeat;
+    background-size: contain;
+}
+.pro-title{
+  color:#212121;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+.pro-desc{
+  font-size: 30rpx;
+  color:#9a9a9a;
+}
+.pro-desc-length{
+  font-size: 30rpx;
+  color:#9a9a9a;
+  float: right;
+}

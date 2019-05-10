@@ -1,0 +1,65 @@
+/* pages/play/index.wxss */
+.title{
+  font-size: 50rpx;
+  text-align: center;
+}
+
+.item {
+  width: 100%;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.audio_progress{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+}
+ 
+.audio_progress slider{
+  width: 80%;
+}
+ 
+.audio_progress view{
+  padding: 18rpx;
+}
+ 
+.audio_post{
+  width: 500rpx;
+  height: 500rpx;
+  margin: 50rpx auto;
+  border-radius: 100%;
+}
+ 
+/* 旋转的样式 */
+.music_on{
+  animation: audio-rotate 30s linear infinite;
+}
+ 
+.audio_control{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+ 
+}
+ 
+.audio_control button{
+  width:200rpx;
+  height:80rpx; 
+  line-height:80rpx;
+}
+ 
+/* 旋转动画 */
+@keyframes audio-rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+ 
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

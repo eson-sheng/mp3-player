@@ -1,0 +1,8 @@
+.idea
+composer.lock
+*.log
+# thinkphp
+
+/public/upload_audio/
+/application/local_config.php
+/application/local_database.php

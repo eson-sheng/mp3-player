@@ -1,0 +1,12 @@
+<!--pages/list/index.wxml-->
+<view-item wx:for="{{dataList}}" wx:for-index="key">
+    <view class="items-list" bindtap="toDetail" data-item="{{key}}">
+        <view class="pro-body">
+            <image class="pro-logo" src="{{host}}{{item.img}}"></image>
+            <!-- <view class="pro-icon-play"></view> -->
+            <view class="pro-title">{{item.name}}</view>
+            <text class="pro-desc">{{item.author}}</text>
+            <text class="pro-desc-length">{{item.length}}</text>
+        </view>
+    </view>
+</view-item>
